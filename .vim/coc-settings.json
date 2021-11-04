@@ -1,0 +1,27 @@
+{
+    "languageserver":{
+        "clangd":{
+            "command":"clangd",
+            "filetypes":[
+                "c",
+                "cc",
+                "cpp"
+            ],
+            "rootPatterns":[
+                "compile_commands.json"
+            ],
+            "args":[
+                "--compile-commands-dir=build",
+                "--compile_args_from=filesystem",
+                "--all-scopes-completion",
+                "--background-index",
+                "--clang-tidy",
+                "--cross-file-rename",
+                "--completion-parse=always",
+                "--completion-style=detailed",
+                "--function-arg-placeholders",
+                "--header-insertion=iwyu",
+                "--header-insertion-decorators"
+            ]
+        }
+    }
