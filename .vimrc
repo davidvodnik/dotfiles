@@ -8,3 +8,8 @@ set expandtab
 
 " Undo after closing file
 set undofile
+
+" Plugins
+call plug#begin('~/.vim/plugged')
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
