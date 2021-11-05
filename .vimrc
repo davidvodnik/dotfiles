@@ -11,5 +11,9 @@ set undofile
 
 " Plugins
 call plug#begin('~/.vim/plugged')
+    Plug 'tomasr/molokai'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
+" Molokai color scheme
+colorscheme molokai
