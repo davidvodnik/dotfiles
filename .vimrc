@@ -12,8 +12,15 @@ set undofile
 " Plugins
 call plug#begin('~/.vim/plugged')
     Plug 'tomasr/molokai'
+    Plug 'scrooloose/nerdtree'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " Molokai color scheme
 colorscheme molokai
+
+" NERDTree keybindings
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
