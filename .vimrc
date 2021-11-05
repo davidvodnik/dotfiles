@@ -16,6 +16,7 @@ set updatetime=100
 call plug#begin('~/.vim/plugged')
     Plug 'tomasr/molokai'
     Plug 'scrooloose/nerdtree'
+    Plug 'vim-airline/vim-airline'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
