@@ -14,14 +14,10 @@ set updatetime=100
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-    Plug 'tomasr/molokai'
     Plug 'scrooloose/nerdtree'
     Plug 'vim-airline/vim-airline'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
-
-" Molokai color scheme
-colorscheme molokai
 
 " NERDTree keybindings
 nnoremap <leader>n :NERDTreeFocus<CR>
