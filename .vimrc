@@ -14,6 +14,7 @@ set updatetime=100
 
 " Plugins
 call plug#begin('~/.vim/plugged')
+    Plug 'tpope/vim-fugitive'
     Plug 'scrooloose/nerdtree'
     Plug 'vim-airline/vim-airline'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
