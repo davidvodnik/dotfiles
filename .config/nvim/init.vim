@@ -6,6 +6,8 @@ Plug 'kassio/neoterm'
 Plug 'szw/vim-maximizer'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'kassio/neoterm'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " default options
@@ -63,3 +65,7 @@ let g:neoterm_autoinsert = 1
 nnoremap <c-q> :Ttoggle<CR>
 inoremap <c-q> <ESC>:Ttoggle<CR>
 tnoremap <c-q> <c-\><c-n>:Ttoggle<CR>
+
+" junegunn/fzf.vim
+nnoremap <leader><space> :GFiles<CR>
+nnoremap <leader>ff :Rg<CR>
