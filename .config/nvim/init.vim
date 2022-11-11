@@ -3,6 +3,9 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'kassio/neoterm'
+Plug 'szw/vim-maximizer'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'kassio/neoterm'
 call plug#end()
 
 " default options
@@ -49,3 +52,14 @@ let g:lightline = {
       \   'gitbranch': 'gitbranch#name'
       \ },
       \ }
+
+" szw/vim-maximizer
+nnoremap <leader>m :MaximizerToggle!<CR>
+
+" kassio/neoterm
+let g:neoterm_default_mod = 'vertical'
+let g:neoterm_size = 60
+let g:neoterm_autoinsert = 1
+nnoremap <c-q> :Ttoggle<CR>
+inoremap <c-q> <ESC>:Ttoggle<CR>
+tnoremap <c-q> <c-\><c-n>:Ttoggle<CR>
