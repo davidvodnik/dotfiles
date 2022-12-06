@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z)
+plugins=(git z vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,3 +105,8 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 alias config='git --git-dir=/Users/david.vodnik/.cfg/ --work-tree=/Users/david.vodnik'
+
+bindkey -v
+
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+
