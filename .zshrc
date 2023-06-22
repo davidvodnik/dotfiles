@@ -104,7 +104,7 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-alias config='git --git-dir=/Users/david.vodnik/.cfg/ --work-tree=/Users/david.vodnik'
+alias config="git --git-dir=${HOME}/.cfg/ --work-tree=$HOME"
 
 bindkey -v
 
