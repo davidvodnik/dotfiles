@@ -21,7 +21,7 @@ set updatetime=100
 
 " Plugins
 call plug#begin()
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 call plug#end()
 
 " Use tab for trigger completion with characters ahead and navigate.
