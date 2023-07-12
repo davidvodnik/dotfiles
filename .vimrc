@@ -9,6 +9,7 @@ set expandtab
 set backspace=indent,eol,start
 
 " Undo after closing file
+set undodir=~/.vim/undo-dir
 set undofile
 
 " Remember position of last edit and return on reopen
