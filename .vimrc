@@ -23,6 +23,8 @@ set updatetime=100
 " Plugins
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Use tab for trigger completion with characters ahead and navigate.
@@ -166,3 +168,9 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" junegunn/fzf.vim
+nnoremap <C-t> :Files<cr>
+nnoremap <C-p> :GFiles<cr>
+nnoremap <Leader>b :Buffers<cr>
+nnoremap <Leader>s :BLines<cr>

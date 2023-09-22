@@ -111,3 +111,5 @@ bindkey -v
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 
 eval "$(starship init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
