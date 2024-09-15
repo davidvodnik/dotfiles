@@ -28,6 +28,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lock
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
 
 " Source Vim configuration file and install plugins
@@ -180,3 +181,6 @@ nnoremap <C-t> :Files<cr>
 nnoremap <C-p> :GFiles<cr>
 nnoremap <Leader>b :Buffers<cr>
 nnoremap <Leader>s :BLines<cr>
+
+set termguicolors
+colorscheme catppuccin_mocha
